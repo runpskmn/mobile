@@ -30,7 +30,7 @@ class _ThaiFontState extends State<ThaiFont> {
       padding: const EdgeInsets.all(6.0),
       child: ElevatedButton(onPressed: (){
         setState(() {
-          fontName = fontName;
+          this.fontName = fontName;
         });
       }, child: Text(fontName, style: TextStyle(fontSize: 15),)),
     );
