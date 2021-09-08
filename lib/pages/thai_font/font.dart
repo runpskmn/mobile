@@ -23,14 +23,14 @@ class _ThaiFontState extends State<ThaiFont> {
     "Srisakdi" : Text("การเดินทางขากลับคงจะเหงาน่าดู", style: GoogleFonts.srisakdi(fontSize: 58.0), textAlign: TextAlign.center),
     "Charm" : Text("การเดินทางขากลับคงจะเหงาน่าดู", style: GoogleFonts.charm(fontSize: 58.0), textAlign: TextAlign.center)
   };
-  String fonrName = "Sarabun";
+  String fontName = "Sarabun";
 
   Widget _buildButton(String fontName){
     return Padding(
       padding: const EdgeInsets.all(6.0),
       child: ElevatedButton(onPressed: (){
         setState(() {
-          fonrName = fontName;
+          fontName = fontName;
         });
       }, child: Text(fontName, style: TextStyle(fontSize: 15),)),
     );
@@ -52,14 +52,14 @@ class _ThaiFontState extends State<ThaiFont> {
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.all(13.0),
-                      child: textWidget[fonrName],
+                      child: textWidget[fontName],
                     ),
                   )
               ),
               Column(
                 children: [
                   Center(
-                    child: Text("Font : $fonrName", style: TextStyle(fontSize: 18),),
+                    child: Text("Font : $fontName", style: TextStyle(fontSize: 18),),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 8.0, right: 8.0, bottom: 8.0),
